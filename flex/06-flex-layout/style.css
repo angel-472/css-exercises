@@ -9,49 +9,27 @@ body {
   flex-direction: column;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  flex: 0 1 0;
-  align-items: center;
-  /*justify-content: flex-start;*/
-  padding: 0px 20px;
-  max-height: 16;
-  gap: 16px;
-}
 
 .right-links {
   margin-left: auto;
 }
 
-.header ul {
+.content {
+  flex: 1;
   display: flex;
-  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.content {
+.header, .footer {
   display: flex;
-  align-self: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 600px;
-  text-align: center;
+  justify-content: space-between;
+  padding: 16px;
 }
 
 .footer {
-  margin-top: auto;
-  max-height: 40px;
-  flex: 0 1 0; /* this is a container but it's also a child (item) of another box */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   background-color: #eeeeee;
-  padding: 0px 20px;
-}
-
-.footer ul {
-  display: flex;
-  gap: 16px;
 }
 
 img {
@@ -63,7 +41,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
-  padding: 10px 20px;
+  padding: 8px 16px;
 }
 
 input {
@@ -75,8 +53,11 @@ input {
 }
 
 ul {
+  display: flex;
+  gap: 16px;
   list-style: none;
   padding: 0px;
+  margin: 0px;
 }
 
 a {
